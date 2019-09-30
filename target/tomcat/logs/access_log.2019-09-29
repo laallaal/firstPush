@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [29/Sep/2019:22:00:18 +0800] "GET /videoPro HTTP/1.1" 302 - http-bio-80-exec-1 0
+0:0:0:0:0:0:0:1 - - [29/Sep/2019:22:00:18 +0800] "GET /videoPro/ HTTP/1.1" 200 14616 http-bio-80-exec-3 874
+0:0:0:0:0:0:0:1 - - [29/Sep/2019:22:00:27 +0800] "GET /videoPro/favicon.png HTTP/1.1" 200 2953 http-bio-80-exec-4 8202
+0:0:0:0:0:0:0:1 - - [29/Sep/2019:22:00:28 +0800] "GET /videoPro/course/list HTTP/1.1" 200 9163 http-bio-80-exec-2 6383
+0:0:0:0:0:0:0:1 - - [29/Sep/2019:22:00:28 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-80-exec-6 0
+0:0:0:0:0:0:0:1 - - [29/Sep/2019:22:00:42 +0800] "GET /videoPro/course/list HTTP/1.1" 200 9163 http-bio-80-exec-7 37

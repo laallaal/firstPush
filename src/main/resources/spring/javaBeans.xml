@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <!-- <bean id="user" class="com.qfedu.entry.User" init-method="init" destroy-method="destory" scope="prototype"/>
+
+    &lt;!&ndash;set get 方法获取实体&ndash;&gt;
+    <bean id="admin" class="com.qfedu.entry.Admin" scope="singleton" init-method="init" >
+        <property name="id" value="100"/>
+        <property name="adminName" value="王五"/>
+        <property name="adminTital" value="哈哈哈哈哈哈哈哈"/>
+        <property name="user" ref="user"/>
+    </bean>
+
+    &lt;!&ndash;构造方法获取实体&ndash;&gt;
+    <bean id="admin2" class="com.qfedu.entry.Admin" scope="singleton" init-method="init" destroy-method="destory">
+        <constructor-arg name="id" value="1000"/>
+        <constructor-arg name="adminName" value="jiaer"/>
+        <constructor-arg name="adminTital" value="嘿嘿嘿hi嘿嘿嘿嘿嘿和呃呃呃呃呃呃呃呃和"/>
+        <constructor-arg ref="user" />
+    </bean>
+
+    &lt;!&ndash;p标签 获取实体&ndash;&gt;
+    <bean  id="admin3" class="com.qfedu.entry.Admin" p:id="666" p:adminName="zhaopeng" p:adminTital="11111111111111111111" p:user-ref="user"/>
+
+
+
+    &lt;!&ndash;factory 静态方法获取User&ndash;&gt;
+    <bean id="createUser" class="com.qfedu.entry.UserFactory" factory-method="createUserstatic"/>
+
+
+    &lt;!&ndash;factory 非静态方法  先new Factory  然后 diaoy方法&ndash;&gt;
+    <bean id="factory" class="com.qfedu.entry.UserFactory"/>
+    <bean id="createUser2" factory-bean="factory" factory-method="createUser"/>
+
+
+    <bean id="complexBean" class="com.qfedu.entry.ComplexBean">
+        <property name="myStrs">
+            <set>
+                <value>qqqqqqq</value>
+                <value>wwwwwww</value>
+                <value>eeeeeee</value>
+                <value>rrrrrrr</value>
+            </set>
+        </property>
+
+        <property name="myList">
+            <array>
+                <value>aaaaa</value>
+                <value>sssss</value>
+                <value>ddddd</value>
+                <value>fffff</value>
+                <value>ggggg</value>
+            </array>
+        </property>
+
+        <property name="mySet">
+            <list>
+                <value>aaaaa</value>
+                <value>sssss</value>
+                <value>ddddd</value>
+                <value>fffff</value>
+                <value>ggggg</value>
+            </list>
+        </property>
+
+        <property name="myMap">
+            <props>
+                <prop key="1234">1234</prop>
+                <prop key="234">234</prop>
+                <prop key="34">34</prop>
+                <prop key="4">4</prop>
+            </props>
+        </property>
+
+        <property name="myPropertise">
+            <map>
+                <entry key="aaa" value="aaa"/>
+                <entry key="sss" value="sss"/>
+                <entry key="ddd" value="ddd"/>
+                <entry key="fff" value="fff"/>
+            </map>
+        </property>
+
+
+    </bean>
+-->
+
+
+
+
+</beans>

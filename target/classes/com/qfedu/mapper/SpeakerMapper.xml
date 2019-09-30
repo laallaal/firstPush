@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qfedu.mapper.SpeakerMapper">
+
+
+
+
+
+
+    <resultMap id="SpeakerMap" type="speaker">
+        <id property="id" column="id"/>
+        <result property="speakerName" column="speakerName"/>
+        <result property="speakerDesc" column="speaker_desc"/>
+        <result property="speakerJob" column="speaker_job"/>
+        <result property="headImgUrl" column="head_img_url"/>
+    </resultMap>
+
+
+    <select id="selectAllSpeaker" resultMap="SpeakerMap">
+        select * from videos.speaker
+    </select>
+
+
+    <delete id="deleteSpeakerById" parameterType="int">
+        delete from videos.speaker where id = #{id}
+    </delete>
+
+
+    <insert id="addSpeakerToDb" parameterType="Speaker" >
+        insert into videos.speaker(speakerName, speaker_desc, speaker_job, head_img_url) values(#{speakerName}, #{speakerDesc}, #{speakerJob}, #{headImgUrl})
+    </insert>
+
+
+    <update id="updateSpeakerById" parameterType="Speaker">
+        update videos.speaker set speakerName = #{speakerName}, speaker_desc = #{speakerDesc}, speaker_job = #{speakerJob}, head_img_url = #{headImgUrl} where id = #{id}
+    </update>
+
+
+
+</mapper>
